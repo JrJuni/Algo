@@ -1,3 +1,4 @@
+'''
 import numpy as np
 from keras.datasets import mnist
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
@@ -39,3 +40,9 @@ print(c)
 # np.random.rand vs np.random.random 차이
 r1 = np.random.rand(2,3)
 r2 = np.random.random((2,3))
+'''
+
+import tensorflow as tf
+from tensorflow.python.client import device_lib
+
+print(device_lib.list_local_devices([1]) )
