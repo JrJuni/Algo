@@ -1,3 +1,4 @@
+'''
 # Q 1330
 import sys
 
@@ -123,5 +124,8 @@ else:
     price = 100*max_dice
 
 print(price)
+'''
 
-
+# Q 2420
+a, b = map(int, input().split())
+print(abs(a-b))
