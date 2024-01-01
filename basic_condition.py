@@ -79,7 +79,6 @@ else:
     m = m - 45
     
 print(h, m)
-'''
 
 # Q 2525
 import sys
@@ -99,3 +98,32 @@ if m >= 60:
 h = h%24
 
 print(h, m)
+'''
+
+# Q 2480
+import sys
+dice = list(map(int, sys.stdin.readline().split()))
+score = [0] * 6
+
+for i in range(3):
+    score[dice[i]-1]+=1
+
+max_score = max(score)
+
+if max_score == 3:
+    max_dice = score.index(3) + 1
+    price = 10000 + 1000*(max_dice+1)
+
+elif max_score == 2:
+    max_dice = score.index(2) + 1
+    price = 1000 + 100*max_dice
+    
+else:
+    for i in range(6):
+        if score[i] == 1:
+            max_dice = i+1
+    price = 100*max_dice
+
+print(price)
+
+
