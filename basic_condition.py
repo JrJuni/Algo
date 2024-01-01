@@ -1,4 +1,3 @@
-'''
 # Q 1330
 import sys
 
@@ -98,7 +97,6 @@ if m >= 60:
 h = h%24
 
 print(h, m)
-'''
 
 # Q 2480
 import sys
@@ -112,7 +110,7 @@ max_score = max(score)
 
 if max_score == 3:
     max_dice = score.index(3) + 1
-    price = 10000 + 1000*(max_dice+1)
+    price = 10000 + 1000*max_dice
 
 elif max_score == 2:
     max_dice = score.index(2) + 1
