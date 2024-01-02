@@ -41,8 +41,17 @@ print(c)
 r1 = np.random.rand(2,3)
 r2 = np.random.random((2,3))
 '''
-
+# CUDA cuDNN 설치 필요
 import tensorflow as tf
 from tensorflow.python.client import device_lib
 
 print(device_lib.list_local_devices([1]) )
+
+'''
+참고 사이트
+https://developers.google.com/codelabs/tensorflow-1-helloworld?hl=ko#0
+https://colab.research.google.com/drive/1IqjyoGLFeEdDFuPQ1yMA018Zz9DWuCkA#scrollTo=WD4GqdT54rya
+https://playground.tensorflow.org/
+https://teachablemachine.withgoogle.com/train
+
+'''
