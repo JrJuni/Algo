@@ -1,3 +1,4 @@
+## 숫자 인식 모델
 '''
 import numpy as np
 from keras.datasets import mnist
@@ -41,11 +42,12 @@ print(c)
 r1 = np.random.rand(2,3)
 r2 = np.random.random((2,3))
 '''
-# CUDA cuDNN 설치 필요
-import tensorflow as tf
-from tensorflow.python.client import device_lib
 
-print(device_lib.list_local_devices([1]) )
+# CUDA cuDNN 설치 필요
+# import tensorflow as tf
+# from tensorflow.python.client import device_lib
+
+# print(device_lib.list_local_devices([1]) )
 
 '''
 참고 사이트
@@ -56,4 +58,8 @@ https://teachablemachine.withgoogle.com/train
 
 # 퍼셉트론 손글씨 인식
 https://colab.research.google.com/drive/1Igay5IFSdV8aLk6V9sD7CU7vfmIR0rMD?utm_campaign=perceptron%20coding#scrollTo=Z_Dp1RQz9taT
+
+# 패션 mnist
+https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/classification.ipynb
 '''
+# keras.Sequential, dense 함수에 대해 알아보자
