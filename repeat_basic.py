@@ -29,9 +29,24 @@ if receipt_price == total_price:
     print("Yes")
 else:
     print("No")
-'''
+
 # Q 25314
 n = int(input())
 for i in range(n//4):
     print("long", end=" ")
 print("int")
+
+# Q 15552
+import sys
+n = int(sys.stdin.readline().rstrip())
+for i in range(n):
+    a, b = map(int, sys.stdin.readline().split())
+    print(a+b)
+'''
+    
+# Q 11021
+import sys
+n = int(sys.stdin.readline().rstrip())
+for i in range(n):
+    a, b = map(int, sys.stdin.readline().split())
+    print(f'Case #{i+1}: {a+b}')
