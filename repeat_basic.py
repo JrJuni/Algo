@@ -42,7 +42,6 @@ n = int(sys.stdin.readline().rstrip())
 for i in range(n):
     a, b = map(int, sys.stdin.readline().split())
     print(a+b)
-'''
     
 # Q 11021
 import sys
@@ -50,3 +49,20 @@ n = int(sys.stdin.readline().rstrip())
 for i in range(n):
     a, b = map(int, sys.stdin.readline().split())
     print(f'Case #{i+1}: {a+b}')
+    
+# Q 11022
+import sys
+n = int(sys.stdin.readline().rstrip())
+for i in range(n):
+    a, b = map(int, sys.stdin.readline().split())
+    print(f'Case #{i+1}: {a} + {b} = {a+b}')
+'''
+    
+# Q 2438
+import sys
+n = int(sys.stdin.readline().rstrip())
+a = ""
+
+for i in range(n):
+    a += "*"
+    print(a)    
