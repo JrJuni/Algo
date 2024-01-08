@@ -56,7 +56,6 @@ n = int(sys.stdin.readline().rstrip())
 for i in range(n):
     a, b = map(int, sys.stdin.readline().split())
     print(f'Case #{i+1}: {a} + {b} = {a+b}')
-'''
     
 # Q 2438
 import sys
@@ -65,4 +64,38 @@ a = ""
 
 for i in range(n):
     a += "*"
-    print(a)    
+    print(a)   
+     
+# Q 2439
+import sys
+n = int(sys.stdin.readline().rstrip())
+
+for i in range(n):
+    a = ""
+    a += " "*(n-i-1)
+    a += "*"*(i+1)
+    print(a) 
+
+# Q 10952
+while(1):
+    a, b = map(int, input().split())
+    if a==0 & b==0:
+        break
+    else:
+        print(a+b)
+        
+'''
+
+# Q 10951
+import sys
+
+while(1):
+    try:
+        a, b = map(int, sys.stdin.readline().split())
+    except:
+        break
+    
+    if a==0 & b==0:
+        break
+    else:
+        print(a+b)
