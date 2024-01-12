@@ -56,8 +56,6 @@ for i in range(6):
         print(ori_chess[i]-input_chess[i])
     else:
         print(ori_chess[i]-input_chess[i], end=" ")
-'''
-
 # Q 25206
 import sys
 total_score = 0
@@ -74,5 +72,8 @@ for i in range(20):
         total_score += (q_dict[sc]*cl)
     
 print(total_score/total_class)
+'''
+
+# Q 2562
     
         
