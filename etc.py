@@ -12,4 +12,6 @@ for i in range(6):
     print(st_list[i])
 ''' 
 
- 
+n = int(input())
+for i in range(n):
+    print(n+1)

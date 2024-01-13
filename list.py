@@ -72,7 +72,6 @@ for i in range(20):
         total_score += (q_dict[sc]*cl)
     
 print(total_score/total_class)
-'''
 
 # Q 2562
 import sys
@@ -94,3 +93,36 @@ for y in range(m):
     put_ball(i_input, j_input, k_input, final_list)
    
 list_crack(final_list)
+
+# Q 10813
+import sys
+n, m = map(int, sys.stdin.readline().split())
+
+def trade_ball(i, j, target_list):
+    target_list[i-1], target_list[j-1] = target_list[j-1], target_list[i-1] 
+        
+def list_crack(cracktarget):
+    crack_ver = map(str, cracktarget)
+    crack_ver = ' '.join(crack_ver)
+    print(crack_ver)
+        
+final_list = [gen_i for gen_i in range(1, n+1)]
+
+for y in range(m):
+    i_input, j_input = map(int, sys.stdin.readline().split())
+    trade_ball(i_input, j_input, final_list)
+   
+list_crack(final_list)
+'''
+# Q 5597
+class_no = [0]*30
+
+for i in range(28):
+    st_no = int(input())
+    class_no[st_no-1] = 1
+
+for j in range(30):
+    if class_no[j] == 0:
+        print(j+1)
+    
+
