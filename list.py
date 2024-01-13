@@ -75,5 +75,22 @@ print(total_score/total_class)
 '''
 
 # Q 2562
-    
+import sys
+n, m = map(int, sys.stdin.readline().split())
+
+def put_ball(i, j, k, target_list):
+    for x in range(i-1, j):
+        target_list[x] = k
         
+def list_crack(cracktarget):
+    crack_ver = map(str, cracktarget)
+    crack_ver = ' '.join(crack_ver)
+    print(crack_ver)
+        
+final_list = [0]*n
+
+for y in range(m):
+    i_input, j_input, k_input = map(int, sys.stdin.readline().split())
+    put_ball(i_input, j_input, k_input, final_list)
+   
+list_crack(final_list)
