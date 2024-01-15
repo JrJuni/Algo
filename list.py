@@ -113,7 +113,7 @@ for y in range(m):
     trade_ball(i_input, j_input, final_list)
    
 list_crack(final_list)
-'''
+
 # Q 5597
 class_no = [0]*30
 
@@ -124,5 +124,14 @@ for i in range(28):
 for j in range(30):
     if class_no[j] == 0:
         print(j+1)
-    
+'''
+# Q 3052
+modi = [0]*43
+
+for i in range(10) :
+    mo = int(input())
+    mo = mo % 42
+    modi[mo] = 1
+
+print(sum(modi))
 
