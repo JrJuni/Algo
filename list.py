@@ -124,7 +124,7 @@ for i in range(28):
 for j in range(30):
     if class_no[j] == 0:
         print(j+1)
-'''
+
 # Q 3052
 modi = [0]*43
 
@@ -135,3 +135,37 @@ for i in range(10) :
 
 print(sum(modi))
 
+# Q 1546
+import sys
+N = int(input())
+
+score = list(map(float, sys.stdin.readline().split()))
+max_sc = max(score)
+
+for i in range((len(score))):
+    score[i] = (score[i]*100)/max_sc
+    
+average_sc = sum(score) / len(score)
+print(average_sc)
+'''
+# Q 10811
+N, M = map(int, input().split())
+ori_list = [i for i in range(1, N+1)]
+
+def shake(a, b, list_name):
+    while a < b:
+        list_name[a-1],list_name[b-1] = list_name[b-1],list_name[a-1]
+        a += 1
+        b -= 1
+
+def list_crack(cracktarget):
+    crack_ver = map(str, cracktarget)
+    crack_ver = ' '.join(crack_ver)
+    print(crack_ver)
+        
+
+for i in range(M):
+    i, j  = map(int, input().split())
+    shake(i, j, ori_list)
+
+list_crack(ori_list)
