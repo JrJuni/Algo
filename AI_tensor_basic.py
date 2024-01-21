@@ -63,3 +63,5 @@ https://colab.research.google.com/drive/1Igay5IFSdV8aLk6V9sD7CU7vfmIR0rMD?utm_ca
 https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/classification.ipynb
 '''
 # keras.Sequential, dense 함수에 대해 알아보자
+
+# 데이터 수집, 전처리, 모델 서치, 학습, 
