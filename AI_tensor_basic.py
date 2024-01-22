@@ -55,9 +55,30 @@ https://developers.google.com/codelabs/tensorflow-1-helloworld?hl=ko#0
 https://colab.research.google.com/drive/1IqjyoGLFeEdDFuPQ1yMA018Zz9DWuCkA#scrollTo=WD4GqdT54rya
 https://playground.tensorflow.org/
 https://teachablemachine.withgoogle.com/train
+(텐서보드) https://bit.ly/kmooc-tensorboard1
+
 
 # 퍼셉트론 손글씨 인식
 https://colab.research.google.com/drive/1Igay5IFSdV8aLk6V9sD7CU7vfmIR0rMD?utm_campaign=perceptron%20coding#scrollTo=Z_Dp1RQz9taT
+<<< Code >>>
+% tensorflow_version 2.x
+import tensorflow as tf
+mnist = tf.keras.datasets.mnist
+
+(x_train, y_train),(x_test, y_test) = mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+
+model = tf.keras.models.Sequential([
+  tf.keras.layers.Flatten(input_shape=(28, 28)),
+  tf.keras.layers.Dense(10, activation='softmax')
+])
+
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train, epochs=5)
+model.evaluate(x_test, y_test)
 
 # 패션 mnist
 https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/classification.ipynb
