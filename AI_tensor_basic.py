@@ -86,4 +86,10 @@ https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tut
 '''
 # keras.Sequential, dense 함수에 대해 알아보자
 
-# 데이터 수집, 전처리, 모델 서치, 학습, 
+# 데이터 수집, 전처리, 모델 서치, 학습
+
+'''
+(배포) https://bit.ly/colab_bootstrap
+(필터) https://bit.ly/convolution-filters
+(Fashion-Mnist) https://bit.ly/mlp-fashion-mnist
+'''
