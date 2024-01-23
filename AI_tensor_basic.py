@@ -56,7 +56,8 @@ https://colab.research.google.com/drive/1IqjyoGLFeEdDFuPQ1yMA018Zz9DWuCkA#scroll
 https://playground.tensorflow.org/
 https://teachablemachine.withgoogle.com/train
 (텐서보드) https://bit.ly/kmooc-tensorboard1
-
+(텐서보드) https://bit.ly/hparameter-tuning
+(차원 축소) https://bit.ly/kmooc-dreduction 
 
 # 퍼셉트론 손글씨 인식
 https://colab.research.google.com/drive/1Igay5IFSdV8aLk6V9sD7CU7vfmIR0rMD?utm_campaign=perceptron%20coding#scrollTo=Z_Dp1RQz9taT
