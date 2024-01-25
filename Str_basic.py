@@ -52,11 +52,38 @@ for i in range(len(S)):
         continue
     
 list_crack(letter_score)
-'''
+
 # Q 1152
 import sys
 S = list(map(str, sys.stdin.readline().split()))
 print(len(S))
 
+# Q 2908
+a, b = map(str, input().split())
+
+def reverse(sample_string):
+    rev_score = 0
+    
+    for i in range(3):
+        rev_score += (10**i) * int(sample_string[i])
+    
+    return rev_score
+
+A = reverse(a)
+B = reverse(b)
+
+print(max(A,B))
+'''
+
+# Q 2675
+N = int(input())
+for i in range(N):
+    a, b = map(str, input().split())
+    
+    for j in range(len(b)):
+        for k in range(int(a)):
+            print(b[j], end="")
+    
+    print("")
 
 
