@@ -96,11 +96,58 @@ for i in range(len(ST)):
     score += answer_dic[ST[i]]
 
 print(score)
-'''
 
 # Q 11718
 while True:
-    line = str(input())
-    if line == "":
+    try:
+        print(input())
+    except EOFError:
         break
-    print(line)
+
+# Q 2754
+gpa = {"A+": 4.3, "A0": 4.0, "A-": 3.7, "B+": 3.3, "B0": 3.0, "B-": 2.7, "C+": 2.3, "C0": 2.0, "C-": 1.7,
+       "D+": 1.3, "D0": 1.0, "D-": 0.7, "F": 0.0}
+
+print(gpa[str(input())])
+
+# Q 2744
+S = str(input())
+maxima = [0]*26
+max_count = 0
+max_chr = ""
+
+for i in range(len(S)):
+    if ord(S[i]) > 95:
+        maxima[ord(S[i])-97] += 1
+        if maxima[ord(S[i])-97] > max_count:
+            max_chr = chr(ord(S[i])-32)
+            max_count = maxima[ord(S[i])-97]
+        elif maxima[ord(S[i])-97] == max_count:
+            max_chr = "?"
+        else:
+            pass
+    else:
+        maxima[ord(S[i])-65] += 1
+        if maxima[ord(S[i])-65] > max_count:
+            max_chr = S[i]
+            max_count = maxima[ord(S[i])-65]
+        elif maxima[ord(S[i])-65] == max_count:
+            max_chr = "?"
+        else:
+            pass
+    
+print(max_chr)
+'''
+
+# Q 2577
+N = int(input()) * int(input()) * int(input())
+S = str(N)
+
+for i in range(10):
+    temp_count = 0
+    for j in range(len(S)):
+        if str(i) == S[j]:
+            temp_count += 1
+    
+    print(temp_count)
+        

@@ -147,7 +147,7 @@ for i in range((len(score))):
     
 average_sc = sum(score) / len(score)
 print(average_sc)
-'''
+
 # Q 10811
 N, M = map(int, input().split())
 ori_list = [i for i in range(1, N+1)]
@@ -169,3 +169,60 @@ for i in range(M):
     shake(i, j, ori_list)
 
 list_crack(ori_list)
+
+# Q 2738 - Numpy 수련법
+import numpy as np
+import sys
+
+n, m = map(int, input().split())
+
+M1 = np.zeros((n,m))
+for i in range(n):
+    M1[i] = list(map(int, sys.stdin.readline().split()))
+
+M2 = np.zeros((n,m))
+for j in range(n):
+    M2[j] = list(map(int, sys.stdin.readline().split()))
+    
+result = np.add(M1, M2)
+
+for i1 in range(n):
+    for i2 in range(m):
+        print(int(result[i1][i2]), end=" ")
+    print("")
+    
+# Q 2738
+import sys
+
+n, m = map(int, input().split())
+
+def mat(n1, m2):
+    matric = [[]]*n1
+    for i2 in range(n1):
+        matric[i2] = list(map(int, sys.stdin.readline().split()))
+    
+    return matric
+
+M1 = mat(n, m)
+M2 = mat(n, m)
+
+for i3 in range(n):
+    for j3 in range(m):
+        M1[i3][j3] += M2[i3][j3]
+
+for i1 in range(n):
+    for i2 in range(m):
+        print(int(M1[i1][i2]), end=" ")
+    print("")
+
+import sys
+
+ori = list(map(int, sys.stdin.readline().split()))
+final = 0
+
+for i in range(len(ori)):
+    final += ori[i]**2
+
+print(final%10)
+
+'''
