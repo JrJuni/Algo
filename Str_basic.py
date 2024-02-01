@@ -137,7 +137,6 @@ for i in range(len(S)):
             pass
     
 print(max_chr)
-'''
 
 # Q 2577
 N = int(input()) * int(input()) * int(input())
@@ -150,4 +149,45 @@ for i in range(10):
             temp_count += 1
     
     print(temp_count)
+
+# Q 10988
+S = str(input())
+pal = 1
+
+for i in range(len(S)//2+1):
+    if S[i] == S[-i-1]:
+        continue
+    else:
+        pal = 0
         
+print(pal)
+
+# Q 2920
+S = str(input())
+
+if S == "1 2 3 4 5 6 7 8":
+    print("ascending")
+elif S == "8 7 6 5 4 3 2 1":
+    print("descending")
+else:
+    print("mixed")
+
+# Q 8968
+N = int(input())
+combo_sc = 1
+
+for i in range(N):
+    S = str(input())
+    ox_sc = 0
+    combo_sc = 1
+    
+    for j in range(len(S)):
+        if S[j] == "O":
+            ox_sc += combo_sc
+            combo_sc += 1
+        else:
+            combo_sc = 1
+    
+    print(ox_sc)
+       
+'''
