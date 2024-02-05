@@ -225,7 +225,6 @@ for i in range(len(ori)):
 
 print(final%10)
 
-'''
 # Q 1259
 while True:
     S = str(input())
@@ -246,3 +245,12 @@ while True:
         print("no")
     else:
         print("yes")
+
+# 숏코딩
+while int(s:=input()):print('yneos'[s!=s[::-1]::2])
+
+":="는 파이썬 3.8 버전부터 도입된 할당 표현식입니다. 이는 대입 연산자로 사용되며, 변수에 값을 할당하고 동시에 해당 값을 반환합니다.
+예를 들어, s := input()은 사용자로부터 입력을 받아 변수 s에 할당하는 동시에 s의 값을 반환합니다. 이는 기존에는 다음과 같이 두 줄로 나누어 작성해야 했던 코드를 간결하게 표현할 수 있도록 도와줍니다:
+s = input()
+
+'''
