@@ -226,3 +226,23 @@ for i in range(len(ori)):
 print(final%10)
 
 '''
+# Q 1259
+while True:
+    S = str(input())
+    if S =='0':
+        break
+    else:
+        pass
+    
+    P = 0
+    
+    for i in range(len(S)//2 + 1):
+        if S[i] == S[-1-i]:
+            continue
+        else:
+            P = 1
+    
+    if P == 1:
+        print("no")
+    else:
+        print("yes")
