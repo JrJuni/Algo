@@ -254,3 +254,6 @@ while int(s:=input()):print('yneos'[s!=s[::-1]::2])
 s = input()
 
 '''
+
+# Q 1102
+print("s")
