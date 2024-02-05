@@ -28,3 +28,5 @@ print(cnt)
 all은 하나라도 False가 있다면 False를 반환한다.
 
 '''
+
+# why?
