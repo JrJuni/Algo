@@ -11,3 +11,4 @@ st_list[5] ="      |"
 
 for i in range(6):
     print(st_list[i])
+'''
