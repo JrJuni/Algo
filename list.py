@@ -226,3 +226,21 @@ for i in range(len(ori)):
 print(final%10)
 
 '''
+# Q 2798
+import sys
+n, m = map(int, input().split())
+card = list(map(int, sys.stdin.readline().split()))
+final_sc = 0
+
+for i in range(len(card)-2):
+    for j in range(i+1, len(card)-1):
+        for k in range(j+1, len(card)):
+            sum_card = card[i] + card[j] + card[k]
+            
+            if sum_card > final_sc and sum_card <= m:
+                final_sc = sum_card
+                print(card[i], card[j], card[k])
+            else:
+                pass
+                
+print(final_sc)
