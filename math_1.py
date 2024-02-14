@@ -28,24 +28,3 @@ print(cnt)
 all은 하나라도 False가 있다면 False를 반환한다.
 
 '''
-# Q 2609
-a, b = map(int, input().split())
-min = 1
-for i in range(2, 10000):
-    while True:
-        if a%i == 0:
-            if b%i == 0:
-                a = a//i
-                b = b//i
-                min *= i
-
-            else:
-                break
-        
-        else:
-            break
-        
-print(min)
-print(min*a*b)            
-    
-
