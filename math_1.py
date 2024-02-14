@@ -28,3 +28,32 @@ print(cnt)
 all은 하나라도 False가 있다면 False를 반환한다.
 
 '''
+# Q 2231
+def gen_num(x):
+    if x > 9:
+        stx = str(x)
+        gen = x
+        for k in range(len(stx)):
+            gen += int(stx[k])
+    else:
+        gen = 2*x
+        
+    return gen
+
+N = int(input())
+num = len(str(N))
+
+final_gen = N-1
+i = 0
+answer = 0
+
+while i < num*9:
+    if gen_num(final_gen) == N:
+        answer = final_gen
+    else:
+        pass
+    
+    final_gen -= 1
+    i += 1
+    
+print(answer)
