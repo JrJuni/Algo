@@ -84,8 +84,6 @@ while(1):
     else:
         print(a+b)
         
-'''
-
 # Q 10951
 import sys
 
@@ -99,3 +97,44 @@ while(1):
         break
     else:
         print(a+b)
+'''
+
+# ㅃ 1316
+alpha = []
+for i in range(97,123):
+    alpha.append(chr(i))
+
+N = int(input())
+cnt = 0
+
+for j in range(N):
+    target_word = str(input())
+    
+    for k in alpha:
+        temp_word = 0
+        
+        for scanner in range(len(target_word)):
+            
+            if k == target_word[scanner]:
+                if temp_word == 0:
+                    temp_word = 1
+                elif k == target_word[scanner-1]:
+                    continue
+                else:
+                    temp_word = 2
+                    break
+            else:
+                continue
+        
+        if temp_word == 2:
+            break
+        else:
+            continue
+        
+    if temp_word == 2:
+        continue
+    else:
+        cnt+=1
+            
+            
+print(cnt)
