@@ -99,7 +99,7 @@ while(1):
         print(a+b)
 '''
 
-# ㅃ 1316
+# Q 1316
 alpha = []
 for i in range(97,123):
     alpha.append(chr(i))
@@ -135,6 +135,5 @@ for j in range(N):
         continue
     else:
         cnt+=1
-            
             
 print(cnt)
